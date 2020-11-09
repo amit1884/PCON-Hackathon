@@ -15,7 +15,7 @@ function NoticeSection() {
         vertical: true,
       };
     return (
-        <div>
+        <div style={{padding:'5px'}}>
             <br/>
              <h5 className="Notice-head">Latest Updates</h5>
             <br />
@@ -48,6 +48,7 @@ function NoticeSection() {
                 </div>
               </Slider>
             </div>
+            <br/>
         </div>
     )
 }
