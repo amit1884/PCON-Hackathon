@@ -1,7 +1,7 @@
 *{
   margin:0;
   padding:0;
-
+  overflow-x: hidden;
 }
 .banner_container{
   overflow-x: hidden;
@@ -51,6 +51,9 @@
     border-bottom:2px solid lightgray;
     text-align: center;
   }
+  .table{
+    overflow-x:scroll;
+  }
 }
 .Notice-head{
   padding:10px;
@@ -68,12 +71,11 @@
 
 table {
   width: 100%;
-  border-collapse: collapse;
   margin: 20px auto;
 }
 
 th {
-  background: #274187;
+  background: #646466;
   color: white;
   font-weight: bold;
 }
@@ -85,65 +87,10 @@ th {
   text-align: left;
   font-size: 15px;
 }
-.trshmob {
-  display: none;
+@media only screen and (max-width: 991px){
+
+  .table{
+    overflow-x:scroll;
+  }
 }
 
-@media only screen and (max-width: 760px),
-  (min-device-width: 768px) and (max-device-width: 1024px) {
-  table {
-    width: 100%;
-  }
-
-  /* Force table to not be like tables anymore */
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    display: block;
-  }
-
-  /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  .trshmob {
-    display: block;
-  }
-  tr {
-    border: 1px solid #ccc;
-  }
-
-  td {
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 42%;
-    word-wrap: break-word;
-    padding-bottom: 5%;
-    overflow:hidden;
-  }
-  .textCenter td {
-    text-align: center;
-  }
-  td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    /* Label the data */
-    content: attr(data-column);
-
-    color: #000;
-    font-weight: bold;
-  }
-}

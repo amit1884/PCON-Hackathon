@@ -92,7 +92,7 @@ function ScholarshipsSection() {
                                                             <td data-column="Defective Verification">{items.Defective_Verification}</td>
                                                             <td data-column="Institute Verification">{items.Institute_Verification}</td>
                                                             <td data-column="Guidelines"><a href ={items.Guidelines}>Guidelines</a></td>
-                                                            <td data-column="FAQs"><a href ={items.FAQs}>FAQs</a></td>
+                                                            <td data-column="FAQs"><a href ={items.FAQ}>FAQs</a></td>
                                                            </tr>
                                                            )
                                                        }
@@ -149,7 +149,7 @@ function ScholarshipsSection() {
                                                         <td data-column="Defective Verification">{items.Defective_Verification}</td>
                                                         <td data-column="Institute Verification">{items.Institute_Verification}</td>
                                                         <td data-column="Guidelines"><a href ={items.Guidelines}>Guidelines</a></td>
-                                                        <td data-column="FAQs"><a href ={items.FAQs}>FAQs</a></td>
+                                                        <td data-column="FAQs"><a href ={items.FAQ}>FAQs</a></td>
                                                        </tr>
                                                     )
                                                 }
@@ -206,7 +206,7 @@ function ScholarshipsSection() {
                                                     <td data-column="Defective Verification">{items.Defective_Verification}</td>
                                                     <td data-column="Institute Verification">{items.Institute_Verification}</td>
                                                     <td data-column="Guidelines"><a href ={items.Guidelines}>Guidelines</a></td>
-                                                    <td data-column="FAQs"><a href ={items.FAQs}>FAQs</a></td>
+                                                    <td data-column="FAQs"><a href ={items.FAQ}>FAQs</a></td>
                                                    </tr>
                                                 )
                                             }
