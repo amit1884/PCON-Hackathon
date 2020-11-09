@@ -64,7 +64,7 @@ function ScholarshipsSection() {
                                         i++;
                                         return(
                                             <Card>
-                                            <Accordion.Toggle as={Card.Header} variant="link" eventKey={i.toString()}>
+                                            <Accordion.Toggle as={Card.Header} variant="link" eventKey={i.toString()} className="accordian_header">
                                                 {items.From}
                                             </Accordion.Toggle>
                                             <Accordion.Collapse eventKey={i.toString()}>
@@ -121,7 +121,7 @@ function ScholarshipsSection() {
                                         j++;
                                     return(
                                         <Card>
-                                        <Accordion.Toggle as={Card.Header} variant="link" eventKey={j.toString()}>
+                                        <Accordion.Toggle as={Card.Header} variant="link" eventKey={j.toString()} className="accordian_header">
                                             {items.From}
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey={j.toString()}>
@@ -178,7 +178,7 @@ function ScholarshipsSection() {
                                     k++;
                                 return(
                                     <Card>
-                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey={k.toString()}>
+                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey={k.toString()} className="accordian_header">
                                         {items.From}
                                     </Accordion.Toggle>
                                     <Accordion.Collapse eventKey={k.toString()}>

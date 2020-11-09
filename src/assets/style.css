@@ -94,3 +94,13 @@ th {
   }
 }
 
+
+.accordian_header{
+  font-size: 15px;
+  font-weight: 600;
+  color:#274187;
+}
+.accordian_header:hover{
+  cursor: pointer;
+  background-color: #bfbfc9;
+}
