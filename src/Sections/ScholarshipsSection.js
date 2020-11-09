@@ -71,16 +71,37 @@ function ScholarshipsSection() {
                                             </Card.Header>
                                             <Accordion.Collapse eventKey={i.toString()}>
                                             <Card.Body>
-                                               {
+                                               <table className="table">
+                                                   <thead>
+                                                       <tr id="headRow">
+                                                       <th>Name of Scholarship</th>
+                                                       <th>Scheme Closing Date</th>
+                                                       <th>Defective Verification</th>
+                                                       <th>Institute Verification</th>
+                                                       <th>Guidelines</th>
+                                                       <th>FAQs</th>
+                                                       </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                   {
                                                    CentralData.map(item=>{
                                                        if(item.From===items.From)
                                                        {
                                                            return(
-                                                           <p>{item.title}</p>
+                                                           <tr>
+                                                            <td data-column="Name of Scholarship">{items.title}</td>
+                                                            <td data-column="Scheme Closing Date">{items.Scheme_Closing_Date}</td>
+                                                            <td data-column="Defective Verification">{items.Defective_Verification}</td>
+                                                            <td data-column="Institute Verification">{items.Institute_Verification}</td>
+                                                            <td data-column="Guidelines"><a href ={items.Guidelines}>Guidelines</a></td>
+                                                            <td data-column="FAQs"><a href ={items.FAQs}>FAQs</a></td>
+                                                           </tr>
                                                            )
                                                        }
                                                    })
                                                }
+                                                   </tbody>
+                                               </table>
                                             </Card.Body>
                                             </Accordion.Collapse>
                                             </Card>
@@ -109,16 +130,37 @@ function ScholarshipsSection() {
                                         </Card.Header>
                                         <Accordion.Collapse eventKey={j.toString()}>
                                         <Card.Body>
+                                        <table className="table">
+                                                   <thead>
+                                                       <tr id="headRow">
+                                                       <th>Name of Scholarship</th>
+                                                       <th>Scheme Closing Date</th>
+                                                       <th>Defective Verification</th>
+                                                       <th>Institute Verification</th>
+                                                       <th>Guidelines</th>
+                                                       <th>FAQs</th>
+                                                       </tr>
+                                                   </thead>
+                                                   <tbody>
                                         {
                                             StateData.map(item=>{
                                                 if(item.From===items.From)
                                                 {
                                                     return(
-                                                    <p>{item.title}</p>
+                                                        <tr>
+                                                        <td data-column="Name of Scholarship">{items.title}</td>
+                                                        <td data-column="Scheme Closing Date">{items.Scheme_Closing_Date}</td>
+                                                        <td data-column="Defective Verification">{items.Defective_Verification}</td>
+                                                        <td data-column="Institute Verification">{items.Institute_Verification}</td>
+                                                        <td data-column="Guidelines"><a href ={items.Guidelines}>Guidelines</a></td>
+                                                        <td data-column="FAQs"><a href ={items.FAQs}>FAQs</a></td>
+                                                       </tr>
                                                     )
                                                 }
                                             })
                                         }
+                                        </tbody>
+                                        </table>
                                         </Card.Body>
                                         </Accordion.Collapse>
                                         </Card>
@@ -147,16 +189,37 @@ function ScholarshipsSection() {
                                     </Card.Header>
                                     <Accordion.Collapse eventKey={k.toString()}>
                                     <Card.Body>
+                                    <table className="table">
+                                        <thead>
+                                            <tr id="headRow">
+                                            <th>Name of Scholarship</th>
+                                            <th>Scheme Closing Date</th>
+                                            <th>Defective Verification</th>
+                                            <th>Institute Verification</th>
+                                            <th>Guidelines</th>
+                                            <th>FAQs</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
                                     {
                                         UGCData.map(item=>{
                                             if(item.From===items.From)
                                             {
                                                 return(
-                                                <p>{item.title}</p>
+                                                    <tr>
+                                                    <td data-column="Name of Scholarship">{items.title}</td>
+                                                    <td data-column="Scheme Closing Date">{items.Scheme_Closing_Date}</td>
+                                                    <td data-column="Defective Verification">{items.Defective_Verification}</td>
+                                                    <td data-column="Institute Verification">{items.Institute_Verification}</td>
+                                                    <td data-column="Guidelines"><a href ={items.Guidelines}>Guidelines</a></td>
+                                                    <td data-column="FAQs"><a href ={items.FAQs}>FAQs</a></td>
+                                                   </tr>
                                                 )
                                             }
                                         })
                                     }
+                                    </tbody>
+                                    </table>
                                     </Card.Body>
                                     </Accordion.Collapse>
                                     </Card>
