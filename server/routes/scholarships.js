@@ -57,4 +57,29 @@ router.get('/details', async (req, res) => {
     })
 });
 
+
+// Central Scheme Data Route
+router.get('/central', async(req,res)=>{
+    const infoes = await Scholarship.find({ Type: 'Central Schemes' });
+    res.status(200).json({
+        message:'Central Scheme Data Fetched',
+        data:infoes
+    })
+})
+// State Scheme Data Route
+router.get('/state', async(req,res)=>{
+    const infoes = await Scholarship.find({ Type: 'State Schemes' });
+    res.status(200).json({
+        message:'State Scheme Data Fetched',
+        data:infoes
+    })
+})
+// UGC/AICTE Scheme Data Route
+router.get('/ugc', async(req,res)=>{
+    const infoes = await Scholarship.find({ Type: 'UGC / AICTE Schemes' });
+    res.status(200).json({
+        message:'UGC Scheme Data Fetched',
+        data:infoes
+    })
+})
 module.exports = router;
