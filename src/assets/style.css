@@ -28,3 +28,36 @@
   height:70px;
   margin-left:20px;
 }
+.nav-tabs .nav-link {
+  /* color: #fff; */
+  color:#274187;
+  background-color: #EDEDED;
+  margin:0 3px;
+  padding:10px 30px;
+  text-align: center;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+  border-top:5px solid #274187 !important;
+}
+.tab_body{
+  box-shadow: 1px 2px 10px lightgray;
+  min-height: 200px;
+  margin:0 3px;
+  padding:20px;
+}
+@media only screen and (max-width: 991px){
+  .nav-tabs .nav-link{
+    width:100%;
+    border-bottom:2px solid lightgray;
+    text-align: center;
+  }
+}
+.Notice-head{
+  padding:10px;
+  background-color: #274187;
+  color:#fff;
+}
+.single_notice{
+  padding: 5px;
+  font-size: 15px;;
+}
