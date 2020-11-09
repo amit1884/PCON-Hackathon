@@ -64,11 +64,9 @@ function ScholarshipsSection() {
                                         i++;
                                         return(
                                             <Card>
-                                            <Card.Header>
-                                            <Accordion.Toggle as={Button} variant="link" eventKey={i.toString()}>
+                                            <Accordion.Toggle as={Card.Header} variant="link" eventKey={i.toString()}>
                                                 {items.From}
                                             </Accordion.Toggle>
-                                            </Card.Header>
                                             <Accordion.Collapse eventKey={i.toString()}>
                                             <Card.Body>
                                                <table className="table">
@@ -123,11 +121,9 @@ function ScholarshipsSection() {
                                         j++;
                                     return(
                                         <Card>
-                                        <Card.Header>
-                                        <Accordion.Toggle as={Button} variant="link" eventKey={j.toString()}>
+                                        <Accordion.Toggle as={Card.Header} variant="link" eventKey={j.toString()}>
                                             {items.From}
                                         </Accordion.Toggle>
-                                        </Card.Header>
                                         <Accordion.Collapse eventKey={j.toString()}>
                                         <Card.Body>
                                         <table className="table">
@@ -182,11 +178,9 @@ function ScholarshipsSection() {
                                     k++;
                                 return(
                                     <Card>
-                                    <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="link" eventKey={k.toString()}>
+                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey={k.toString()}>
                                         {items.From}
                                     </Accordion.Toggle>
-                                    </Card.Header>
                                     <Accordion.Collapse eventKey={k.toString()}>
                                     <Card.Body>
                                     <table className="table">
