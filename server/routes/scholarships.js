@@ -58,6 +58,8 @@ router.get('/details', async (req, res) => {
 });
 
 
+
+
 // Central Scheme Data Route
 router.get('/central', async(req,res)=>{
     const infoes = await Scholarship.find({ Type: 'Central Schemes' });
