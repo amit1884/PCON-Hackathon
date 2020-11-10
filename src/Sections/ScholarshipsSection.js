@@ -93,12 +93,12 @@ function ScholarshipsSection() {
                                                    {
                                                        return(
                                                        <tr>
-                                                        <td data-column="Name of Scholarship">{items.title}</td>
-                                                        <td data-column="Scheme Closing Date">{items.Scheme_Closing_Date}</td>
-                                                        <td data-column="Defective Verification">{items.Defective_Verification}</td>
-                                                        <td data-column="Institute Verification">{items.Institute_Verification}</td>
-                                                        <td data-column="Guidelines"><a href ={items.Guidelines}>Guidelines</a></td>
-                                                        <td data-column="FAQs"><a href ={items.FAQ}>FAQs</a></td>
+                                                        <td data-column="Name of Scholarship">{item.title}</td>
+                                                        <td data-column="Scheme Closing Date">{item.Scheme_Closing_Date}</td>
+                                                        <td data-column="Defective Verification">{item.Defective_Verification}</td>
+                                                        <td data-column="Institute Verification">{item.Institute_Verification}</td>
+                                                        <td data-column="Guidelines"><a href ={item.Guidelines}>Guidelines</a></td>
+                                                        <td data-column="FAQs"><a href ={item.FAQ}>FAQs</a></td>
                                                        </tr>
                                                        )
                                                    }
@@ -152,12 +152,12 @@ function ScholarshipsSection() {
                                                 {
                                                     return(
                                                         <tr>
-                                                        <td data-column="Name of Scholarship">{items.title}</td>
-                                                        <td data-column="Scheme Closing Date">{items.Scheme_Closing_Date}</td>
-                                                        <td data-column="Defective Verification">{items.Defective_Verification}</td>
-                                                        <td data-column="Institute Verification">{items.Institute_Verification}</td>
-                                                        <td data-column="Guidelines"><a href ={items.Guidelines}>Guidelines</a></td>
-                                                        <td data-column="FAQs"><a href ={items.FAQ}>FAQs</a></td>
+                                                        <td data-column="Name of Scholarship">{item.title}</td>
+                                                        <td data-column="Scheme Closing Date">{item.Scheme_Closing_Date}</td>
+                                                        <td data-column="Defective Verification">{item.Defective_Verification}</td>
+                                                        <td data-column="Institute Verification">{item.Institute_Verification}</td>
+                                                        <td data-column="Guidelines"><a href ={item.Guidelines}>Guidelines</a></td>
+                                                        <td data-column="FAQs"><a href ={item.FAQ}>FAQs</a></td>
                                                        </tr>
                                                     )
                                                 }
@@ -211,12 +211,12 @@ function ScholarshipsSection() {
                                             {
                                                 return(
                                                     <tr>
-                                                    <td data-column="Name of Scholarship">{items.title}</td>
-                                                    <td data-column="Scheme Closing Date">{items.Scheme_Closing_Date}</td>
-                                                    <td data-column="Defective Verification">{items.Defective_Verification}</td>
-                                                    <td data-column="Institute Verification">{items.Institute_Verification}</td>
-                                                    <td data-column="Guidelines"><a href ={items.Guidelines}>Guidelines</a></td>
-                                                    <td data-column="FAQs"><a href ={items.FAQ}>FAQs</a></td>
+                                                    <td data-column="Name of Scholarship">{item.title}</td>
+                                                    <td data-column="Scheme Closing Date">{item.Scheme_Closing_Date}</td>
+                                                    <td data-column="Defective Verification">{item.Defective_Verification}</td>
+                                                    <td data-column="Institute Verification">{item.Institute_Verification}</td>
+                                                    <td data-column="Guidelines"><a href ={item.Guidelines}>Guidelines</a></td>
+                                                    <td data-column="FAQs"><a href ={item.FAQ}>FAQs</a></td>
                                                    </tr>
                                                 )
                                             }

@@ -55,7 +55,7 @@
     overflow-x:scroll;
   }
 }
-.Notice-head{
+.Search-head{
   padding:10px;
   background-color: #274187;
   color:#fff;
@@ -87,12 +87,6 @@ th {
   text-align: left;
   font-size: 15px;
 }
-@media only screen and (max-width: 991px){
-
-  .table{
-    overflow-x:scroll;
-  }
-}
 
 
 .accordian_header{
@@ -103,4 +97,32 @@ th {
 .accordian_header:hover{
   cursor: pointer;
   background-color: #bfbfc9;
+}
+
+.form_container{
+  width:100%;
+  margin:2%;
+  padding:10px;
+  min-height:400px;
+  box-shadow: 1px 2px 10px lightgray;
+}
+.form_container form{
+  margin:5px;
+
+}
+select,option{
+  width:95%;
+  margin:2px;
+  word-wrap: break-word;
+  font-size:14px;
+  padding:5px;
+}
+.lable{
+  font-size:18px;
+  font-weight: 550;
+  margin-top:20px;
+}
+
+.submitbtn{
+  margin-top: 5%;
 }
