@@ -126,3 +126,7 @@ select,option{
 .submitbtn{
   margin-top: 5%;
 }
+
+.modal-dialog{
+  max-width:880px !important;
+}
