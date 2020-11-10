@@ -16,7 +16,7 @@ function SearchSection() {
     },[Type])
 
     const FromHandle= async()=>{
-        await axios.get(`http://localhost:8000/scholars/froms?type=${Type}`)
+        await axios.get(`https://scholarshipapi.herokuapp.com/scholars/froms?type=${Type}`)
         .then(res=>{
             console.log(res.data.froms)
             setFromArray(res.data.froms)
@@ -27,7 +27,7 @@ function SearchSection() {
     const SubmitHandler= async(e)=>{
         e.preventDefault();
         console.log(Type,From)
-        await axios.get(`http://localhost:8000/scholars/details?type=${Type}&from=${From}`)
+        await axios.get(`https://scholarshipapi.herokuapp.com/scholars/details?type=${Type}&from=${From}`)
         .then(res=>{
             console.log(res.data.message)
             setData(res.data.message)

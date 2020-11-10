@@ -21,7 +21,7 @@ function ScholarshipsSection() {
     },[])
 
     const Central= async ()=>{
-        await axios.get('http://localhost:8000/scholars/central')
+        await axios.get('https://scholarshipapi.herokuapp.com/scholars/central')
         .then(res=>{
             setCentralData(res.data.data)
             setLoading(false)
@@ -30,7 +30,7 @@ function ScholarshipsSection() {
         .catch(err=>console.log(err))
     }
     const State= async ()=>{
-        await axios.get('http://localhost:8000/scholars/state')
+        await axios.get('https://scholarshipapi.herokuapp.com/scholars/state')
         .then(res=>{
             setStateData(res.data.data)
             setLoading(false)
@@ -39,7 +39,7 @@ function ScholarshipsSection() {
         .catch(err=>console.log(err))
     }
     const UGC= async ()=>{
-        await axios.get('http://localhost:8000/scholars/ugc')
+        await axios.get('https://scholarshipapi.herokuapp.com/scholars/ugc')
         .then(res=>{
             setUGCData(res.data.data)
             setLoading(false)
