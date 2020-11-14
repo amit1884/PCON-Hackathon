@@ -5,7 +5,7 @@
 
 ## Features
 1. Data is scrapped from https://scholarships.gov.in/
-2. Every 10 minutes new data is added(if available)
+2. Every 1 minutes new data is added(if available)
 3. Different types of scholarships categorised on the basis of central,state,UGC/AICTE.
 4. Scholarships can be searched by selecting the type of scheme and department.
 5. Scholarships can be searched directly by just typing name of scholarship or scheme name or state name.
